@@ -1,0 +1,248 @@
+.backgrounds {
+	position: relative;
+}
+.bg {
+	width: 100%;
+	height: 1100px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.title {
+	font-family: 'Mountains of Christmas', cursive;
+	font-size: 75px;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	z-index: 2;
+}
+
+#alice {
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	top: 200px;
+	right: 150px;
+	z-index: 1;
+	-webkit-animation-name: alice;
+	-webkit-animation-duration: alice;
+	animation-name: alice;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes alice {
+    0%   {transform: rotate(0deg);}
+    50%  {transform: rotate(-10deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes alice {
+    0%   {transform: rotate(0deg);}
+    50%  {transform: rotate(-10deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#clock {
+	position: absolute;
+	left: -400px;
+	margin-top: 100px;
+	z-index: 2;
+	overflow: hidden;
+	-webkit-animation-name: clock;
+	-webkit-animation-duration: clock;
+	animation-name: clock;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes clock {
+    0%   {transform: rotate(0deg);}
+    50%  {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes clock {
+    0%   {transform: rotate(0deg);}
+    50%  {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#cards {
+	position: absolute;
+	right: -400px;
+	top: 400px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#tea {
+	position: absolute;
+	left: -400px;
+	top: 200px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#flowers {
+	position: absolute;
+	right: -400px;
+	top: 400px;
+	margin-top: 75px;
+	z-index: 2;
+	overflow: hidden;
+	-webkit-animation-name: flowers;
+	-webkit-animation-duration: flowers;
+	animation-name: flowers;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flowers {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(15deg);}	
+    50%  {transform: rotate(65deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes flowers {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(15deg);}	
+    50%  {transform: rotate(65deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#cat {
+	position: absolute;
+	right: 60%;
+	top:-100px;
+	z-index: 2;
+	overflow: hidden;
+	display: none;
+	-webkit-animation-name: cat;
+	-webkit-animation-duration: cat;
+	animation-name: cat;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.container-fluid{
+	overflow: hidden;
+}
+@-webkit-keyframes cat {
+    0%   {opacity: 0;}
+    50%   {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes cat {
+    0%   {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#falling-alice {
+	position: fixed;
+	z-index: 5;
+	top: 40%;
+	left: 40%;
+	display: none;
+}
+
+#books {
+	position: absolute;
+	right: -400px;
+	top: 400px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#chair {
+	position: absolute;
+	left: 15%;
+	top: 200px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#lamp {
+	position: absolute;
+	left: 65%;
+	top:-50px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#lamp-2 {
+	position: absolute;
+	left: 65%;
+	top:-50px;
+	z-index: 2;
+	overflow: hidden;
+	display: none;
+}
+
+#mirror {
+	position: absolute;
+	left: -400px;
+	top: 200px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#white-rabbit {
+	position: absolute;
+	right: -400px;
+	top: 600px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#curtain {
+	position: absolute;
+	width: 100%;
+	margin: 200px 20px 0px 20px;
+	overflow: hidden;
+}
+
+#button {
+	left: 50%;
+}
+
+/*card container*/
+.bold {
+	font-weight:bold;
+}
+
+.small-container {
+	max-width:800px;
+}
+
+.margin-top-10 {
+	margin-top:10px;
+}
+
+.margin-top-20 {
+	margin-top:20px;
+}
+
+.book-container {
+	padding:20px 0;
+	background-color:#FFF;
+	transition:all 0.3s linear;
+}
+
+.book-container:hover {
+	background-color:#DDD;
+	transition:all 0.3s ease-in-out;
+}
+
+.book-container img {
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+
+
+
