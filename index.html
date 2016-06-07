@@ -3,12 +3,9 @@
 	<head>
 		<title>Alice in Wonderland</title>
 
-	    <!-- Google Fonts CSS -->
-		 <link href='https://fonts.googleapis.com/css?family=Mountains+of+Christmas' rel='stylesheet' type='text/css'>
-
 	    <!-- Bootstrap CSS -->
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
-		<link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" /> -->
 
 	    <!-- Custom CSS -->
 	    <link rel="stylesheet" href="style.css">
@@ -37,7 +34,6 @@
 
 			<img src="images/falling-alice.png" id="falling-alice" alt=""/>
 			<div class="backgrounds">
-				<h1 class="title">Alice in Wonderland</h1>
 				<img src="images/background-1.png" id="bg-1" class="bg" alt=""/>
 				<img src="images/alice.png" id="alice" alt=""/>
 			</div>
@@ -57,54 +53,54 @@
 			</div>
 
 			<div class="backgrounds">
+				<img src="images/breadandbutterfly.png" id="fly" alt=""/>
 				<img src="images/books.png" id="books" alt=""/>
 				<img src="images/chair.png" id="chair" alt=""/>
 				<img src="images/lamp.png" id="lamp" alt=""/>
-				<img src="images/lamp-2.png" id="lamp-2" alt=""/>
 				<img src="images/background-4.png" id="bg-4" class="bg" alt=""/>
 			</div>
 
 			<div class="backgrounds">
 				<img src="images/mirror.png" id="mirror" alt=""/>
 				<img src="images/white-rabbit.png" id="white-rabbit" alt=""/>
-				<img src="images/curtains.png" id="curtain" alt=""/>
 				<img src="images/background-5.png" id="bg-5" class="bg" alt=""/>
 			</div>
 
 			<!--Card-->
 			<div class="container">
-			<div id= "alice">
+			<div id= "alice-card">
+			text test
 				<script id="alice-template" type="text/x-handlebars-template">
 				<div class="row margin-top-20 book-container">
 					
 					<div class="col-sm-3">
-						<img src="{{thumbnail}}" class="img-responsive"/>
+						<img src="{{volumeInfo.imageLinks.thumbnail}}" id="alice-thumbnail" class="img-responsive"/>
 					</div>
 					<div class="col-sm-9">
 						<div class="margin-top-20">
-							<span class="bold">Title: </span><span>{{title}}</span>
+							<span class="bold">Title: </span><span>{{volumeInfo.title}}</span>
 						</div>
 						<div>
-							<span class="bold">Author: </span><span>{{authors}}</span>
+							<span class="bold">Author: </span><span>{{volumeInfo.authors}}</span>
 						</div>
 						<div>
-							<span class="bold">Publisher: </span><span>{{publisher}}</span>
+							<span class="bold">Publisher: </span><span>{{volumeInfo.publisher}}</span>
 						</div>
 						<div>
-							<span class="bold">Published Date: </span><span>{{publishedDate}}</span>
+							<span class="bold">Published Date: </span><span>{{volumeInfo.publishedDate}}</span>
 						</div>
 						<div>
-							<span class="bold">Categorie: </span><span>{{categories}}</span>
+							<span class="bold">Categories: </span><span>{{volumeInfo.categories}}</span>
 						</div>
 						<div>
-							<span class="bold">Page Count: </span><span>{{pageCount}}</span>
+							<span class="bold">Page Count: </span><span>{{volumeInfo.pageCount}}</span>
 						</div>
 						<div>
-							<span class="bold">Description: </span><span>{{description}}</span>
+							<span class="bold">Description: </span><span>{{volumeInfo.description}}</span>
 						</div>
 
 						<div class="margin-top-20">
-							<a href="https://books.google.com/books?id=wfoXm8su2CQC&printsec=frontcover&dq=aliceinwonderland&hl=&as_ebook=1&cd=1&source=gbs_api#v=onepage&q=aliceinwonderland&f=false" class="btn btn-default">Preview Book</a>
+							<a href="https://books.google.com/books?id=wfoXm8su2CQC&printsec=frontcover&dq=aliceinwonderland&hl=&as_ebook=1&cd=1&source=gbs_api#v=onepage&q=aliceinwonderland&f=false" target="_blank" class="btn btn-default">Preview Book</a>
 						</div>
 					</div>
 				</div>
@@ -112,21 +108,6 @@
 			</div>
 			</div>
 			<!--Card-->
-
-
-
-
-			<!-- <div id="container"></div>
-			<div id="search-input-box" class="border-radius">
-				<h2 class="txt-center">Learn More About Alice</h2>
-				<div class="row">
-					<div class="col-sm-12 txt-center">
-						<a id="learn-more-button" class="btn btn-primary margin-top-20">Learn More</a>
-					</div>
-				</div>
-			</div> -->
-
-
 
 		</div>
 
