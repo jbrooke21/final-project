@@ -9,6 +9,16 @@
 	background-repeat: no-repeat;
 }
 
+#tea, 
+#flowers,
+#chair,
+#lamp,
+#white-rabbit {
+	position: absolute;
+	height: 500px;
+	width: 500px;
+}
+
 #alice {
 	position: absolute;
 	top: 15%;
@@ -69,9 +79,6 @@
 }
 
 #tea {
-	position: absolute;
-	height: 500px;
-	width: 500px;
 	left: -610px;
 	top: 300px;
 	z-index: 2;
@@ -79,9 +86,6 @@
 }
 
 #flowers {
-	position: absolute;
-	height: 500px;
-	width: 500px;
 	right: -650px;
 	top: 400px;
 	margin-top: 75px;
@@ -152,9 +156,6 @@
 }
 
 #chair {
-	position: absolute;
-	height: 500px;
-	width: 500px;
 	left: 15px;
 	top: 200px;
 	z-index: 2;
@@ -162,9 +163,6 @@
 }
 
 #lamp {
-	position: absolute;
-	height: 500px;
-	width: 500px;
 	right: 50%;
 	top:-100px;
 	z-index: 2;
@@ -177,8 +175,8 @@
 	position: absolute;
 	height: 300px;
 	width: 300px;
-	left: 20px;
-	bottom: -30px;
+	right: 25%;
+	top: 60px;
 	z-index: 2;
 	overflow: hidden;
 }
@@ -193,8 +191,6 @@
 
 #white-rabbit {
 	position: absolute;
-	height: 500px;
-	width: 500px;
 	right: -450px;
 	top: 400px;
 	margin-bottom: 40px;
